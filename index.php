@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<title>Exemplo PHP</title>
+<title>Teste</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@ echo 'Versao Atual do PHP: ' . phpversion() . '<br>';
 
 $servername = "54.234.153.24";
 $username = "root";
-$password = "Senha123";
+$password = "12345678";
 $database = "meubanco";
 
 // Criar conexão
@@ -39,6 +39,9 @@ $query = "INSERT INTO dados (AlunoID, Nome, Sobrenome, Endereco, Cidade, Host) V
 
 if ($link->query($query) === TRUE) {
   echo "New record created successfully";
+  echo "<br>Valor Rand1: $valor_rand1";
+  echo "<br>Valor Rand2: $valor_rand2";
+  echo "<br>Host Name: $host_name";
 } else {
   echo "Error: " . $link->error;
 }
